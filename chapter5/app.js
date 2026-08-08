@@ -57,7 +57,12 @@ var num = 5;
 
     // ques6
     var a = 10
-    cosole.log(a+a++)
-    
+     cosole.log(a+a++)
+     console.log(a+a++)
+
+
+
+     
+
 
     
