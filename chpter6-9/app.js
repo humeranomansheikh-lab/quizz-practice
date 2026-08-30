@@ -27,6 +27,7 @@ Result at this stage: 1
 Current values: a = 1, b = 0
 
 Stage 3: --a - --b + ++b
+
 Operator: Pre-increment (++) on b
 
 Explanation: Increments b by 1 before using its value. b changes from 0 to 1, and ++b evaluates to 1.
