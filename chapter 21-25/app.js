@@ -77,31 +77,53 @@
 
 
 //Question 14
-var order = prompt("ABC Bakery what do you want sir/ma'm")
-var bakery = ["cake","apple pie","chips","patties"]
-var flag = false
-for(i=0; i<bakery.length; i++){
-    if(bakery[i].toLowerCase()===order.toLowerCase()){
-        var result =
-        order.charAt(0).toUpperCase() + order.slice(1).toLowerCase()
-        document.write(result + "is available in index" + i  +"in our bakery")
-        flag=true
-        break
+// var order = prompt("ABC Bakery what do you want sir/ma'm")
+// var bakery = ["cake","apple pie","chips","patties"]
+// var flag = false
+// for(i=0; i<bakery.length; i++){
+//     if(bakery[i].toLowerCase()===order.toLowerCase()){
+//         var result =
+//         order.charAt(0).toUpperCase() + order.slice(1).toLowerCase()
+//         document.write(result + "is available in index" + i  +"in our bakery")
+//         flag=true
+//         break
+//     }
+// }
+// if (flag===false){
+//     if(bakery[i].toLowerCase()===order.toLowerCase()){
+
+//      var result =
+//         order.charAt(0).toUpperCase() + order.slice(1).toLowerCase()
+//     document.write("we are sorry"  + result +   "is not available in our bakery")
+// }
+
+// // }
+
+// // Q9
+// var value="472"
+// var numberValue=Number(value)
+// document.write("value:" + numberValue+ "<br>")
+// document.write("type:" + typeof+ numberValue)
+
+// Q12
+
+var num = 35.36
+var result = String(num).replace("."," ")
+
+document.write("Number:"+ num +"<br>")
+document.write("Result:" + result )
+
+// Q13
+
+var userName=prompt("Enter your user name")
+var flag=false
+for(var i=0;i<userName.length;i++){
+    var code =userName.charAt(i)
+    if(code===33 || code===44|| code===64){
+        
+
     }
 }
-if (flag===false){
-    if(bakery[i].toLowerCase()===order.toLowerCase()){
-
-     var result =
-        order.charAt(0).toUpperCase() + order.slice(1).toLowerCase()
-    document.write("we are sorry"  + result +   "is not available in our bakery")
-}
-
-}
-
-
-
-
 
 
 
