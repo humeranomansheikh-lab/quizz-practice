@@ -105,27 +105,81 @@
 // document.write("value:" + numberValue+ "<br>")
 // document.write("type:" + typeof+ numberValue)
 
-// Q12
+// // Q12
 
-var num = 35.36
-var result = String(num).replace("."," ")
+// var num = 35.36
+// var result = String(num).replace("."," ")
 
-document.write("Number:"+ num +"<br>")
-document.write("Result:" + result )
+// document.write("Number:"+ num +"<br>")
+// document.write("Result:" + result )
 
 // Q13
 
-var userName=prompt("Enter your user name")
-var flag=false
-for(var i=0;i<userName.length;i++){
-    var code =userName.charAt(i)
-    if(code===33 || code===44|| code===64){
+// var userName=prompt("Enter your user name")
+// var flag=false
+// for(var i=0;i<userName.length;i++){
+//     var code =userName.charAt(i)
+//     if(code===33 || code===44|| code===64){
         
 
-    }
-}
+//     }
+// }
+
+// // Q13
+// var userName=prompt("Enter your user name")
+// for(var i=0; i<userName.length; i++){
+//     var code = userName.charCodeAt(i)
+//     if(code==33 ||code==44 || code==46 || code==64){
+//         alert("please Enter a valid number ")
+//         break
+//     }
+
+// }
+
+// Q15
+
+// var password =("enter your password")
+// var firstChar=password.charCodeAt(0)
+// var hasAlphabet=false
+// var hasNumber=false
+// for(var i=0; i<password.length; i++){
+//     var code= password.charCodeAt(i)
+
+//     if((code>=65 && code<=90) || (code>=97 && code<=122)){
+//         hasAlphabet=true
+        
+//     }
+//     if(code>=48 && code<=57){
+//         hasNumber=true
+//         }
+//     }
+//     if(hasAlphabet && hasNumber && password.length>=6 && !(firstChar>=48 && firstChar <=57)){
+//         alert("valid password")
+
+//     }
+//     else{
+//         alert("password is not valid please enter avalid password")
+//     }
 
 
+    // Q16
+
+    // var university="univrsity of karachi"
+    // var arr = university.split("")
+    // for(var i=0; i<arr.length; i++){
+    //     document.write(arr[i] + "<br>")
+    // }
+
+    // Q17
+
+    var input =prompt("enter a word")
+    var lastCarachter = input.charAt(input.length - 1)
+    document.write("last character:" + lastCarachter)
 
 
+    // Q18
 
+    var arr ="The quick brown fox jumps over the lazy dog"
+    var first= arr.toLowerCase().indexOf("the")
+    var second= arr.toLowerCase().indexOf("the",first + 1)
+    document.write("The word 'the' occurs 2 times")
