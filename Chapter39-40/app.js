@@ -125,3 +125,75 @@ function countVowels(text){
 var sentence=prompt("enter a sentence")
 var result=countVowels(sentence)
 document.write("Number of vowels:"+ result)
+
+
+// Q8
+
+function meters(km) {
+    console.log("Meters =", km * 1000);
+}
+
+function feet(km) {
+    console.log("Feet =", km * 3280.84);
+}
+
+function inches(km) {
+    console.log("Inches =", km * 39370.1);
+}
+
+function centimeters(km) {
+    console.log("Centimeters =", km * 100000);
+}
+
+let km = Number(prompt("Enter distance in kilometers:"));
+
+meters(km);
+feet(km);
+inches(km);
+centimeters(km);
+
+// Q9
+
+
+function overtimePay(hours) {
+    if (hours > 40) {
+        let overtimeHours = hours - 40;
+        let pay = overtimeHours * 12;
+
+        console.log("Overtime hours =", overtimeHours);
+        console.log("Overtime pay = Rs.", pay);
+    } else {
+        console.log("No overtime pay.");
+    }
+}
+
+let hours = Number(prompt("Enter hours worked:"));
+
+overtimePay(hours);
+
+
+
+
+
+// Q10
+
+
+function currencyNotes(amount) {
+    let total = amount * 100;
+
+    let notes100 = Math.floor(total / 100);
+    total = total % 100;
+
+    let notes50 = Math.floor(total / 50);
+    total = total % 50;
+
+    let notes10 = Math.floor(total / 10);
+
+    console.log("Rs. 100 notes =", notes100);
+    console.log("Rs. 50 notes =", notes50);
+    console.log("Rs. 10 notes =", notes10);
+}
+
+let amount = Number(prompt("Enter amount in hundreds:"));
+
+currencyNotes(amount);
